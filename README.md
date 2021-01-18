@@ -1,2 +1,2 @@
-# bwarm-mysql-data-load
-The MLC sql Scipts to load BWARM snapshots into a MySQL Database
+# bwarm-data-load
+A collection of SQL Scripts The MLC uses to load BWARM snapshots into Data Stores

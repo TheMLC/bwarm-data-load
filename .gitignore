@@ -1,0 +1,10 @@
+.settings
+**logs/
+**log/
+logs/
+log/
+**.sh
+
+#Mac DS Store
+.DS_Store
+**.DS_Store	
