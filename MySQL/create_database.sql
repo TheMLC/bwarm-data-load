@@ -21,12 +21,6 @@ CREATE TABLE `SNAPSHOTS` (
     PRIMARY KEY (snapshotid)
 );
 
-CREATE TABLE PUBLIC_DB_STATS (
-    snapshotid   VARCHAR(3000),
-    stats_type   VARCHAR(3000),
-    stats        INTEGER
-);
-
 CREATE TABLE `WORKS` (
     FeedProvidersWorkId VARCHAR(3000),
     ISWC VARCHAR(11),
@@ -95,11 +89,11 @@ CREATE TABLE `WORK_RIGHT_SHARES` (
 
 CREATE TABLE `RECORDINGS` (
     FeedProvidersRecordingId VARCHAR(3000),
-    ISRC VARCHAR(11),
+    ISRC VARCHAR(12),
     RecordingTitle MEDIUMTEXT, 
     RecordingSubTitle MEDIUMTEXT, 
     DisplayArtistName MEDIUMTEXT, 
-    DisplayArtistISNI VARCHAR(15),
+    DisplayArtistISNI VARCHAR(16),
     PLine VARCHAR(3000),
     Duration  VARCHAR(100),
     FeedProvidersReleaseId VARCHAR(3000),
@@ -137,7 +131,7 @@ CREATE TABLE `RELEASES` (
     ReleaseTitle MEDIUMTEXT,
     ReleaseSubTitle MEDIUMTEXT,
     DisplayArtistName MEDIUMTEXT,
-    DisplayArtistISNI VARCHAR(15),
+    DisplayArtistISNI VARCHAR(16),
     LabelName VARCHAR(3000),
     ReleaseDate VARCHAR(10),
     OriginalDataProviderName VARCHAR(3000),
@@ -174,7 +168,7 @@ CREATE TABLE `UNCLAIMED_WORKS` (
     RecordingSubTitle MEDIUMTEXT,
     AlternativeRecordingTitle MEDIUMTEXT,
     DisplayArtistName MEDIUMTEXT,
-    DisplayArtistISNI VARCHAR(15),
+    DisplayArtistISNI VARCHAR(16),
     Duration VARCHAR(100),
     UnclaimedPercentage FLOAT,
     PercentileForPrioritisation INTEGER,
