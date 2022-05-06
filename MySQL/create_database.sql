@@ -24,7 +24,7 @@ CREATE TABLE `SNAPSHOTS` (
 CREATE TABLE `WORKS` (
     FeedProvidersWorkId VARCHAR(3000),
     ISWC VARCHAR(11),
-    Workitle MEDIUMTEXT,
+    WorkTitle MEDIUMTEXT,
     OpusNumber VARCHAR(3000),
     ComposerCatalogNumber VARCHAR(3000),
     NominalDuration VARCHAR(3000),
