@@ -1,6 +1,6 @@
 TRUNCATE TABLE [dbo].[PARTIES];
 
-print GETUTCDATE();
+print format(sysdatetime(), 'dd/MM/yyyy HH:mm:ss.fff');
 
 DECLARE @SNAPSHOT_ID INT;
 SELECT @SNAPSHOT_ID = MAX(snapshotid)
@@ -15,4 +15,4 @@ with (fieldterminator = '\t',
       maxerrors=10);
 GO
 
-print GETUTCDATE();
+print format(sysdatetime(), 'dd/MM/yyyy HH:mm:ss.fff');
