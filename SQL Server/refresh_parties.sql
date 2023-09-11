@@ -9,7 +9,8 @@ GO
 
 BULK INSERT [dbo].[PARTIES]
 from 'parties.tsv'
-with (fieldterminator = '\t',
+with (data_source = 'AzureDataLoadStgSource',
+      fieldterminator = '\t',
       rowterminator='0x0a',
       batchsize=10000,
       maxerrors=10);
