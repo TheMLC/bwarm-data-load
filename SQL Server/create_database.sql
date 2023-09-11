@@ -69,7 +69,7 @@ CREATE TABLE [dbo].[WORK_IDENTIFIERS] (
 CREATE TABLE [dbo].[PARTIES] (
     [FeedProvidersPartyId] [varchar](900),
     [ISNI] [varchar](15),
-    [IpiNameNumber] [int],
+    [IpiNameNumber] [bigint],
     [CisacSocietyId] [varchar](3),
     [DPID] [varchar](100),
     [FullName] [varchar](max),
@@ -77,6 +77,10 @@ CREATE TABLE [dbo].[PARTIES] (
     [KeyName] [varchar](max),
     [NamesAfterKeyName] [varchar](max),
     [snapshotid] [int],
+    [Unused1] [varchar](900),
+    [Unused2] [varchar](900),
+    [Unused3] [varchar](900),
+    [Unused4] [varchar](900),
     CONSTRAINT [PK_FeedProvidersPartyId] PRIMARY KEY CLUSTERED 
         (
 	        [FeedProvidersPartyId] ASC
