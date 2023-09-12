@@ -76,11 +76,7 @@ CREATE TABLE [dbo].[PARTIES] (
     [NamesBeforeKeyName] [varchar](max),
     [KeyName] [varchar](max),
     [NamesAfterKeyName] [varchar](max),
-    [snapshotid] [int],
-    [Unused1] [varchar](900),
-    [Unused2] [varchar](900),
-    [Unused3] [varchar](900),
-    [Unused4] [varchar](900),
+    [snapshotid] [int]
     CONSTRAINT [PK_FeedProvidersPartyId] PRIMARY KEY CLUSTERED 
         (
 	        [FeedProvidersPartyId] ASC
