@@ -196,7 +196,7 @@ CREATE TABLE [dbo].[UNCLAIMED_WORKS] (
     [FeedProvidersRightShareId] [VARCHAR](900),
     [FeedProvidersRecordingId] [VARCHAR](900),
     [FeedProvidersWorkId] [VARCHAR](900),
-    [ISRC]  [VARCHAR](11),
+    [ISRC]  [VARCHAR](12),
     [DspRecordingId]  [VARCHAR](900),
     [RecordingTitle] [VARCHAR](MAX),
     [RecordingSubTitle] [VARCHAR](MAX),
@@ -205,7 +205,7 @@ CREATE TABLE [dbo].[UNCLAIMED_WORKS] (
     [DisplayArtistISNI] [VARCHAR](16),
     [Duration] [VARCHAR](100),
     [UnclaimedPercentage] [FLOAT],
-    [PercentileForPrioritisation] [INT],
+    [PercentileForPrioritisation] [FLOAT],
     [snapshotid] [INT],
     CONSTRAINT [PK_FeedProvidersRightShareId] PRIMARY KEY CLUSTERED 
         (
