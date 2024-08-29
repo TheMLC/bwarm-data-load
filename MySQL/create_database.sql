@@ -162,7 +162,7 @@ CREATE TABLE `UNCLAIMED_WORKS` (
     FeedProvidersRightShareId VARCHAR(3000),
     FeedProvidersRecordingId VARCHAR(3000),
     FeedProvidersWorkId VARCHAR(3000),
-    ISRC  VARCHAR(11),
+    ISRC  VARCHAR(12),
     DspRecordingId  VARCHAR(3000),
     RecordingTitle MEDIUMTEXT,
     RecordingSubTitle MEDIUMTEXT,
@@ -171,6 +171,6 @@ CREATE TABLE `UNCLAIMED_WORKS` (
     DisplayArtistISNI VARCHAR(16),
     Duration VARCHAR(100),
     UnclaimedPercentage FLOAT,
-    PercentileForPrioritisation INTEGER,
+    PercentileForPrioritisation FLOAT,
     snapshotid INT
 );
